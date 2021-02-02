@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Border from "../atoms/Border";
-import Bookmark from "../atoms/BookMark";
-import Imgs from "../atoms/Imgs";
-import Score from "../atoms/Score";
-import TextStyled from "../atoms/Text";
+import Border from "../../atoms/atoms-list/Border";
+import Bookmark from "../../atoms/atoms-list/BookMark";
+import Imgs from "../../atoms/atoms-list/Imgs";
+import Score from "../../atoms/atoms-list/Score";
+import TextStyled from "../../atoms/atoms-list/Text";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BiWon } from "react-icons/bi";
 

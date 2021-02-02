@@ -1,6 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import LodgingLists from "../molecules/List20";
+import LodgingLists from "../../molecules/molecules-list/List20";
 
 const PcSize = styled.main`
   width:840px;

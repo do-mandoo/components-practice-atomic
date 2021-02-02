@@ -1,7 +1,7 @@
-import MainStyle from "../UI/organisms/ListMainSt";
-import ListStyle from "../UI/organisms/ListsSt";
-import GoogleStyle from "../UI/organisms/GoogleMapSt";
-import HeadStyle from "../UI/organisms/HeadStyle";
+import MainStyle from "../../UI/organisms/organisms-list/ListMainSt";
+import ListStyle from "../../UI/organisms/organisms-list/ListsSt";
+import GoogleStyle from "../../UI/organisms/organisms-list/GoogleMapSt";
+import HeadStyle from "../../UI/organisms/organisms-list/HeadStyle";
 
 const ListTemplate = () => {
 	return(

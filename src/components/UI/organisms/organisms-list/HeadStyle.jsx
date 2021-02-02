@@ -1,6 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import SearchData from "../molecules/SearchData";
+import SearchData from "../../molecules/molecules-list/SearchData";
 
 const PcSize = styled.main`
 	width: 100%;

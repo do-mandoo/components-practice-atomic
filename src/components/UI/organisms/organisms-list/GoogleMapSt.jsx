@@ -1,8 +1,8 @@
 // import { GoogleApiWrapper } from "google-maps-react";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import App from "../molecules/GoogleMap";
-import FakeBox from "../molecules/GoogleMap";
+import App from "../../molecules/molecules-list/GoogleMap";
+import FakeBox from "../../molecules/molecules-list/GoogleMap";
 // import GoogleMap from "../molecules/GoogleMap";
 // import SearchData from "../molecules/SearchData";
 
