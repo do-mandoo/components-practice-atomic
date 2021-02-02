@@ -1,6 +1,7 @@
 // import { GoogleApiWrapper } from "google-maps-react";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
+import App from "../molecules/GoogleMap";
 import FakeBox from "../molecules/GoogleMap";
 // import GoogleMap from "../molecules/GoogleMap";
 // import SearchData from "../molecules/SearchData";
@@ -16,31 +17,33 @@ const PcSize = styled.main`
 `
 
 const TabletSize = styled.main`
-	
+	display:none;
 `
 
 const MobileSize = styled.main`
-	width : calc(100%-100%);
+	/* width : calc(100%-100%); */
 	background-color: yellow;
+	display:none;
 `
 
 const GoogleStyle = () => {
 	const isPc = useMediaQuery({
-		query: '(min-width: 1128px)', //1128px 이상인 경우에만 적용
+		query: '(min-width: 1025px)', //1128px 이상인 경우에만 적용
 	});
 	const isTablet = useMediaQuery({
-		query: `(min-width: 745px)and (max-width: 1127px)`,
+		query: `(min-width: 745px)and (max-width: 1025px)`,
 	});
 	const isMobile = useMediaQuery({
-		query: `(max-width: 744px)`, //744px 이하인 경우에만 적용
+		query: `(max-width: 745px)`, //744px 이하인 경우에만 적용
 	});
 
 	return (
 		<>
 			{isPc && (
 				<PcSize className="Asidemap">
-					{/* <GoogleApiWrapper /> */}
-					<FakeBox />
+					{/* <GoogleApiWrapper />
+					<FakeBox /> */}
+					<App />
 				</PcSize>
 			)}
 			{isTablet && (

@@ -11,13 +11,13 @@ const PcSize = styled.main`
 	} */
 `
 const TabletSize = styled.main`
-  width:840px;
+  width:1000px;
 	min-height: calc(100vh - 80px);
   background-color: skyblue;
 `
 
 const MobileSize = styled.main`
-  min-width: 547px;
+  width: 665px;
 	min-height: calc(100vh - 0px);
   background-color: purple;
 	/* carousalBihImg */
@@ -25,13 +25,13 @@ const MobileSize = styled.main`
 
 const ListStyle = () => {
 	const isPc = useMediaQuery({
-		query: '(min-width: 1128px)', //1128px 이상인 경우에만 적용
+		query: '(min-width: 1025px)', //1025 px 이상인 경우에만 적용(1127이상.)
 	});
 	const isTablet = useMediaQuery({
-		query: `(min-width: 745px)and (max-width: 1127px)`,
+		query: `(min-width: 677px)and (max-width: 1025px)`,
 	});
 	const isMobile = useMediaQuery({
-		query: `(max-width: 744px)`, //744px 이하인 경우에만 적용
+		query: `(max-width: 677px)`, //744px 이하인 경우에만 적용(744이하.)
 	});
 
 	return (
@@ -48,7 +48,7 @@ const ListStyle = () => {
 			)}
 			{isMobile && (
 				<MobileSize className="Listmain">
-					<LodgingLists />
+					{/* <LodgingLists /> */}
 				</MobileSize>
 			)}
 		</>

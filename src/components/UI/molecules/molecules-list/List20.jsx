@@ -13,7 +13,6 @@ const Wrap = styled.div`
   min-height : 5013px;
   padding: 0 24px;
   box-sizing : border-box;
-  
 `
 
 const ULWrap = styled.ul`
