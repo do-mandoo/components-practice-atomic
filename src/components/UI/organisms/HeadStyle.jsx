@@ -1,29 +1,22 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import LodgingLists from "../molecules/List20";
+import SearchData from "../molecules/SearchData";
 
 const PcSize = styled.main`
-  width:840px;
-	min-height: calc(100vh - 80px);
-  background-color: #eee;
-	/* .listWrap{
-		padding: 0 24px;
-	} */
+	width: 100%;
+	padding: 20px;
+	display:flex;
 `
+
 const TabletSize = styled.main`
-  width:840px;
-	min-height: calc(100vh - 80px);
-  background-color: skyblue;
+	
 `
 
 const MobileSize = styled.main`
-  min-width: 547px;
-	min-height: calc(100vh - 0px);
-  background-color: purple;
-	/* carousalBihImg */
+  
 `
 
-const ListStyle = () => {
+const HeadStyle = () => {
 	const isPc = useMediaQuery({
 		query: '(min-width: 1128px)', //1128px 이상인 경우에만 적용
 	});
@@ -37,21 +30,21 @@ const ListStyle = () => {
 	return (
 		<>
 			{isPc && (
-				<PcSize className="Listmain">
-					<LodgingLists />
+				<PcSize className="Listheader">
+					<SearchData />
 				</PcSize>
 			)}
 			{isTablet && (
-				<TabletSize className="Listmain">
-					<LodgingLists />
+				<TabletSize className="Listheader">
+					<SearchData />
 				</TabletSize>
 			)}
 			{isMobile && (
-				<MobileSize className="Listmain">
-					<LodgingLists />
+				<MobileSize className="Listheader">
+					<SearchData />
 				</MobileSize>
 			)}
 		</>
 	);
 };
-export default ListStyle;
+export default HeadStyle;

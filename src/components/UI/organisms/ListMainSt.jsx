@@ -1,9 +1,10 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import SearchData from "../molecules/SearchData";
 
 const PcSize = styled.main`
-	position: relative;
+	width: 100%;
+	padding: 20px;
+	display:flex;
 `
 
 const TabletSize = styled.main`
@@ -29,17 +30,17 @@ const MainStyle = () => {
 		<>
 			{isPc && (
 				<PcSize className="Listheader">
-					<SearchData />
+					
 				</PcSize>
 			)}
 			{isTablet && (
 				<TabletSize className="Listheader">
-					<SearchData />
+					
 				</TabletSize>
 			)}
 			{isMobile && (
 				<MobileSize className="Listheader">
-					<SearchData />
+					
 				</MobileSize>
 			)}
 		</>

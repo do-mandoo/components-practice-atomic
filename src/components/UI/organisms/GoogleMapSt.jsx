@@ -8,9 +8,10 @@ import FakeBox from "../molecules/GoogleMap";
 
 const PcSize = styled.main`
 	/* display : inline-block; */
-	width : calc(100% - 840px);
+	/* width: 80px; */
+	min-width : calc(100vw - 840px);
   /* min-height : calc(100vh - 80px); */
-  left : auto;
+  /* left : auto; */
 	background-color: lightcoral;
 `
 

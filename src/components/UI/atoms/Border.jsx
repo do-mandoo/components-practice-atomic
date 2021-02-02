@@ -5,7 +5,6 @@ const BorderStyle = styled.div`
   ${props => props.carouselImg && css`
     width : 300px;
     height : 200px;
-    border : 1px solid red;
   `}
   
   ${props => props.bigCarouselImg && css`
@@ -14,7 +13,10 @@ const BorderStyle = styled.div`
     width: 100%;
 
     height : 200px;
-    border : 1px solid blue;
+  `}
+  ${props => props.bookmarkImg && css`
+    width : 48px;
+    height : 48px;
   `}
 
 `

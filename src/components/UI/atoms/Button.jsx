@@ -18,6 +18,25 @@ const sizeStyles = css`
 			height:1.75rem;
 			font-size:0.875rem;
 		`}
+	${props => props.size === 'heart' &&
+		css`
+			width:48px;
+			height:48px;
+			border-radius : 50%;
+			font-size:1.5rem;
+			padding: 0;
+			margin:0;
+			background-color:none;
+			&:hover{
+			background: ##f7f7f7;
+			border-color: #222;
+			&:active{
+				background: ##f7f7f7;
+				border-color: #222;
+				transform: scale(0.92);
+			}
+		`
+	}
 `
 
 const StyledButton = styled.button`

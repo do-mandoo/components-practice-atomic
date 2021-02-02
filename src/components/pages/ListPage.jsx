@@ -1,8 +1,13 @@
 import ListTemplate from '../templates/ListTemplate';
 
 
+
 const ListPage = () => {
-	return <ListTemplate />;
+	return (
+		<>
+			<ListTemplate />		
+		</>
+	);
 };
 
 export default ListPage;
